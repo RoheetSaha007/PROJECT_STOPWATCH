@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background and Centering */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a2a43;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+    background-color: #f3f8fb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(228, 21, 21, 0.4);
+    text-align: center;
+    color: #ffffff;
+    width: 500px;
+}
+
+/* RGB Sparkling Effect for Heading */
+.rgb-sparkling-text {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    animation: rgbSparkle 3s infinite, sparkle 1.5s infinite;
+}
+
+/* Timer Display */
+.timer-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Button Styling */
+.button {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4c3b;
+}
+
+/* Lap Times Styling */
+.lap-times {
+    font-size: 16px;
+    text-align: left;
+    color: #444242;
+}
+
+/* Reduced Sparkling Effect Animation */
+@keyframes sparkle {
+    0%, 100% {
+        text-shadow: 0 0 3px #fff, 0 0 6px #ff6347;
+    }
+    50% {
+        text-shadow: 0 0 6px #ff6347, 0 0 10px #ff6347;
+    }
+}
+
+/* RGB Color Animation */
+@keyframes rgbSparkle {
+    0% {
+        color: #ff3e3e;
+    }
+    33% {
+        color: #3eff3e;
+    }
+    66% {
+        color: #3e3eff;
+    }
+    100% {
+        color: #ff3e3e;
+    }
+}
+
+/* Lap Time Entries */
+.lap-time {
+    margin-top: 5px;
+}
